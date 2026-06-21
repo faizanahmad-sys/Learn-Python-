@@ -147,3 +147,75 @@ a=int(input("Enter USD"))
 convert(a)
 
 
+#know we learn about recursion 
+
+#when a function call itself repeatedly 
+ 
+ #moslty case we use loop for that but in some time in some case e useing recursion 
+
+#for Example # we are doing that we need to print n to 1 
+
+# for that #we are doing such as 
+
+def show (5):
+  if (n==0):
+   return
+  print (n)
+  show(n-1) =>here n-1 is 5-1=4 #so here fuction calls itself again and again 
+
+ 
+Import point is that how recuresion work or how to write a code 
+1st what work to assign
+2nd what is base case means what codition need to apply
+
+"""
+  
+# we can use as the return to control the conditon means stop
+
+#print the number 10 to 1 in reverse fom
+
+def reverse(n):
+   if(n==0):
+      return
+   print(n)
+   reverse(n-1)
+   
+
+reverse(10)
+     
+
+#find the factorial of 5 using recursion
+def fact (n):
+   if (n==1 or n==0):
+    return 1
+   return fact(n-1)* n
+  
+print(fact(5))
+
+
+# find a recursive fuction to calculate the sum of first n natural number
+
+def sum(n):
+   if(n==0):
+      return 0
+   print(n)
+   return  sum(n-1)+n
+
+ans=sum(5)
+print(ans)
+
+
+# W a recursive function to print all element in a list
+#hint : use list and index as parameter
+
+
+def list_name(list,idx=0):
+ if(idx==len(list)):
+   return
+ print(list[idx])
+ list_name(list,idx+1)
+
+Name=["ali","shah","faizan"]
+
+list_name(Name)
+
